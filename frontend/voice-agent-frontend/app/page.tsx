@@ -130,7 +130,7 @@ export default function Home() {
                 </svg>
               </div>
               <div>
-                <h1 className="text-xl font-bold text-white">SuperBryn</h1>
+                <h1 className="text-xl font-bold text-white">VoiceFlow</h1>
                 <p className="text-xs text-slate-400">Voice Appointment System</p>
               </div>
             </div>
@@ -170,7 +170,7 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
                     </svg>
                   </div>
-                  <h2 className="text-3xl font-bold text-white mb-3">Welcome to SuperBryn</h2>
+                  <h2 className="text-3xl font-bold text-white mb-3">Welcome to VoiceFlow</h2>
                   <p className="text-lg text-slate-400">Professional voice appointment system</p>
                 </div>
 

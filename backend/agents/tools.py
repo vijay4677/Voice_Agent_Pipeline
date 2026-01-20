@@ -399,7 +399,7 @@ async def end_conversation(
         return {
             "success": True,
             "summary": complete_summary,
-            "message": "Call ended. Thank you for using SuperBryn!"
+            "message": "Call ended. Thank you for using VoiceFlow!"
         }
     except Exception as e:
         logger.error(f"Error ending conversation: {e}", exc_info=True)

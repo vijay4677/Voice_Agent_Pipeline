@@ -104,7 +104,7 @@ def run_livekit_agent():
 def main():
     """Main entrypoint - runs both services"""
     logger.info("=" * 60)
-    logger.info("SuperBryn Voice Agent - Production Mode")
+    logger.info("VoiceFlow Voice Agent - Production Mode")
     logger.info("=" * 60)
     
     required_vars = [

@@ -70,7 +70,7 @@ class SingleAvatarSession:
         room,
         agent_session,
         participant_identity: str = "agent_avatar",
-        participant_name: str = "SuperBryn Assistant"
+        participant_name: str = "VoiceFlow Assistant"
     ) -> Tuple[Optional[object], bool]:
         """
         Get existing avatar or create new one

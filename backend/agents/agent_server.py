@@ -1,5 +1,5 @@
 """
-SuperBryn Voice Agent - Modern LiveKit Agent Implementation
+VoiceFlow Voice Agent - Modern LiveKit Agent Implementation
 """
 
 
@@ -56,7 +56,7 @@ logger = logging.getLogger("agent")
 
 
 class Assistant(Agent):
-    """Voice AI Assistant for SuperBryn appointment booking system"""
+    """Voice AI Assistant for VoiceFlow appointment booking system"""
     
     def __init__(self, cost_tracker=None, room_name=None) -> None:
         self._room = None  # Will be set when agent starts
@@ -77,7 +77,7 @@ class Assistant(Agent):
             logger.info(f"📝 Created conversation store for room: {room_name}")
         
         super().__init__(
-            instructions=f"""You are a helpful and friendly AI voice assistant for SuperBryn, an appointment booking system.
+            instructions=f"""You are a helpful and friendly AI voice assistant for VoiceFlow, an appointment booking system.
 
 Your responsibilities:
 1. Help users with appointment bookings
@@ -100,7 +100,7 @@ Guidelines:
 
 **CRITICAL - How to End Conversations:**
 1. After completing ANY task (booking/cancellation/modification), you MUST:
-   - Say "Thank you for using SuperBryn. Have a great day!"
+   - Say "Thank you for using VoiceFlow. Have a great day!"
    - IMMEDIATELY call the end_conversation() function
    - Do this in ONE turn - speak and call function together
 
@@ -118,7 +118,7 @@ Guidelines:
 
 Example flows:
 User: "Book me for 2pm tomorrow"
-You: [book appointment] "Your appointment is confirmed for 2 PM tomorrow. Thank you for using SuperBryn!" [CALL end_conversation() NOW]
+You: [book appointment] "Your appointment is confirmed for 2 PM tomorrow. Thank you for using VoiceFlow!" [CALL end_conversation() NOW]
 
 User: [silence after task completion]
 You: [CALL end_conversation() immediately - no speech]
@@ -808,7 +808,7 @@ Be curious, friendly, and helpful!""",
                         await self._send_tool_call_to_ui("end_conversation", {}, {
                             "success": True,
                             "summary": summary_data,
-                            "message": "Thank you for using SuperBryn! Your summary is ready."
+                            "message": "Thank you for using VoiceFlow! Your summary is ready."
                         })
                         logger.info("Summary sent via tool_call message")
                         
@@ -1095,7 +1095,7 @@ async def my_agent(ctx: JobContext):
             room=ctx.room,
             agent_session=session,
             participant_identity="agent_avatar",
-            participant_name="SuperBryn Assistant"
+            participant_name="VoiceFlow Assistant"
         )
         
         log_phase(f"Avatar {'creation' if is_new_avatar else 'reuse'}")
@@ -1116,7 +1116,7 @@ async def my_agent(ctx: JobContext):
     timing_start = time.time()
     
     try:
-        greeting_text = "Hello! Welcome to SuperBryn. I'm Klara ready to help you with appointment bookings. How can I assist you today?"
+        greeting_text = "Hello! Welcome to VoiceFlow. I'm Klara ready to help you with appointment bookings. How can I assist you today?"
         
         logger.info(f"Synthesizing greeting...")
         
@@ -1222,7 +1222,7 @@ async def my_agent(ctx: JobContext):
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 
-app = FastAPI(title="SuperBryn Voice Agent API")
+app = FastAPI(title="VoiceFlow Voice Agent API")
 
 # CORS configuration
 app.add_middleware(
@@ -1237,7 +1237,7 @@ app.add_middleware(
 @app.get("/")
 async def root():
     """Health check endpoint"""
-    return {"status": "ok", "service": "SuperBryn Voice Agent"}
+    return {"status": "ok", "service": "VoiceFlow Voice Agent"}
 
 
 @app.post("/api/get-token")

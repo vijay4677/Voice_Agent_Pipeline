@@ -187,7 +187,7 @@ export default function VoiceCallUI({ onCallEnd, roomName }: VoiceCallUIProps) {
                         <div className="flex items-center justify-between mb-6">
                             <div>
                                 <h3 className="text-2xl font-bold text-white">
-                                    SuperBryn Voice
+                                    VoiceFlow Voice
                                 </h3>
                                 <p className="text-sm text-slate-400 mt-1">Voice Assistant Active</p>
                             </div>

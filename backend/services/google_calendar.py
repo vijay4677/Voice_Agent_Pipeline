@@ -180,7 +180,7 @@ Appointment Details:
 - Name: {name}
 - Purpose: {purpose}
 - Phone: {phone}
-- Booked via: SuperBryn AI Voice Assistant
+- Booked via: VoiceFlow AI Voice Assistant
                 """.strip(),
                 'start': {
                     'dateTime': start_time_str,

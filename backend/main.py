@@ -1,5 +1,5 @@
 """
-SuperBryn Voice Agent - Simplified Main Entry Point
+VoiceFlow Voice Agent - Simplified Main Entry Point
 Works with current LiveKit Agents API
 """
 
@@ -25,7 +25,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Initialize FastAPI app
-app = FastAPI(title="SuperBryn Voice Agent API")
+app = FastAPI(title="VoiceFlow Voice Agent API")
 
 # CORS configuration
 app.add_middleware(
@@ -40,7 +40,7 @@ app.add_middleware(
 @app.get("/")
 async def root():
     """Health check endpoint"""
-    return {"status": "ok", "service": "SuperBryn Voice Agent"}
+    return {"status": "ok", "service": "VoiceFlow Voice Agent"}
 
 
 @app.post("/api/get-token")

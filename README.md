@@ -1,7 +1,7 @@
 # Voice_Agent
 Voice_Agent End to End Implementation both Frontend and Backend
 
-## 📋 Project Description
+##  Project Description
 
 A production-ready AI voice agent for appointment booking built with LiveKit Agents. Features real-time voice conversation, appointment management tools, cost tracking, and optional avatar video integration.
 
@@ -12,7 +12,7 @@ A production-ready AI voice agent for appointment booking built with LiveKit Age
 -  Optional avatar video integration
 -  Call summaries with detailed breakdowns
 
-## 🚀 Quick Start Commands
+##  Quick Start Commands
 
 ### 1. Install Dependencies
 
@@ -73,7 +73,7 @@ npm run dev
 
 Open browser: **http://localhost:3000**
 
-## 🛠️ Available Tools
+##  Available Tools
 
 1. `identify_user` - Find/validate users
 2. `fetch_slots` - Get available time slots

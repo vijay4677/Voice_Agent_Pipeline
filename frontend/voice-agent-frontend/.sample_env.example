@@ -1,0 +1,27 @@
+# ============================================
+# VoiceFlow Voice Agent - Frontend Environment Variables
+# ============================================
+# Copy this file to .env.local and fill in your actual values
+# cp .env.example .env.local
+
+# ============================================
+# REQUIRED VARIABLES
+# ============================================
+
+# API Server URL
+# This should point to your backend FastAPI server
+# For local development: http://localhost:8000
+# For production: https://your-api-domain.com
+NEXT_PUBLIC_API_URL=http://localhost:8000
+
+# LiveKit Server URL
+# Get this from your LiveKit server configuration
+# Format: wss://your-server.livekit.cloud
+NEXT_PUBLIC_LIVEKIT_URL=wss://your-server.livekit.cloud
+
+# ============================================
+# NOTES
+# ============================================
+# - NEXT_PUBLIC_ prefix is required for Next.js to expose these to the browser
+# - These values are public and will be included in the client-side bundle
+# - Do NOT put sensitive API keys here - use server-side environment variables instead

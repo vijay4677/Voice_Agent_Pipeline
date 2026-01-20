@@ -1,0 +1,30 @@
+
+livekit
+livekit-agents
+livekit-plugins-deepgram
+livekit-plugins-cartesia
+livekit-plugins-openai
+livekit-plugins-silero
+livekit-plugins-noise-cancellation
+livekit-api
+
+livekit-plugins-bey
+
+# Database
+supabase
+
+# Web Framework
+fastapi
+uvicorn[standard]
+python-multipart
+
+# Utilities
+python-dotenv
+pydantic
+aiohttp
+python-json-logger
+
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+google-api-python-client
